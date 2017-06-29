@@ -31,13 +31,71 @@
 			<section id="main" >
 				<div class="inner">
 					<header class="major special">
-						<h1>The Latest Listings</h1> <!--Will connect to a server and will have an automatic fetch method running in this-->
+						<h1>Look Up What You Want From Our List</h1> <!--Will connect to a server and will have an automatic fetch method running in this-->
 						
 					</header>
 					
 					
 				</div>
 			</section>
+<section class="main">
+
+<h2>User Information</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">WBC Count</th>
+  </tr>
+  <tr>
+    <td><a href="http://dashboard.athelas.com/clinic/user.html?name=1" target="_blank">1</a></td>
+    <td>3</td>
+  </tr>
+   <tr>
+    <td><a href="http://dashboard.athelas.com/clinic/user.html?name=1" target="_blank">1</a></td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td> <a href="http://dashboard.athelas.com/clinic/user.html?name=2" target="_blank">2</a></td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td> <a href="http://dashboard.athelas.com/clinic/user.html?name=101" target="_blank">101</a></td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td> <a href="http://dashboard.athelas.com/clinic/user.html?name=001_test_trial" target="_blank">001_test_trial</a>
+</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td> <a href="http://dashboard.athelas.com/clinic/user.html?name=00000" target="_blank">00000</a></td>
+    <td>--</td>
+  </tr>
+ 
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
 
 		<!-- Footer -->
 			<section id="footer">
