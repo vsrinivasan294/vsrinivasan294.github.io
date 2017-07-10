@@ -1,3 +1,17 @@
+
+Build a basic interactive site and remove the review stuff
+  Have a post ID and a login where people and say what they want to barter
+  Have a manual update for each product and offer or make an AI
+  Add a product page for every item in the list and then make it link to the picture 
+  Create a list of groups that each product slots into
+  Create a databse of users with login authentication 
+  Get Sohum to look into marketing 
+
+
+
+
+
+
 # [Start Bootstrap](http://startbootstrap.com/) - [Shop Homepage](http://startbootstrap.com/template-overviews/shop-homepage/)
 
 [Shop Homepage](http://startbootstrap.com/template-overviews/shop-homepage/) is a basic HTML online store homepage template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
