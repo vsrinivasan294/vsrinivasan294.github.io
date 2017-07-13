@@ -1,122 +1,157 @@
         <!-- PAGE THE USER USES WHEN THEY ARE GOING THROUGHT THE PROCESS OF PUTTING AN ITEM UP FOR BARTERING -->
 
 
-<!DOCTYPE HTML>
-<!--
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!DOCTYPE html>
 <html>
+
 	<head>
-		<title>Barter Bounty</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
+	        <title>List</title>
+	        <meta charset="utf-8" />
+	        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	        <link rel="stylesheet" href="assets/css/main.css" />
+	    </head>
+	    <body>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="index.html" class="logo">Barter Bounty</a>
-					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="generic.html">Listings</a>
-						<a href="login.html">You</a>
-					</nav>
-				</div>
-			</header>
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+	        <!-- Header -->
+	            <header id="header">
+	                <div class="inner">
+	                    <a href="index.html" class="logo">BarterBounty</a>
+	                    <nav id="nav">
+	                        <a href="index.html">Home</a>
+	                        <a href="homepage.html">Shop</a>
+	                        <a href="login.html">Login</a>
+	                    </nav>
+	                </div>
+	            </header>
+	            <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<h1>The Ultimate Location for everything in your life</h1>
-					<ul class="actions">
-						<li><a href="login.html" class="button alt">Get Started</a></li>
-					</ul>
-				</div>
-			</section>
 
-		<!-- One -->
-			<section id="one">
-				<div class="inner">
-					<header>
-					<b>
-						<h2>Start Bartering Today</h2>
+	        <!-- Scripts -->
+	            <script src="assets/js/jquery.min.js"></script>
+	            <script src="assets/js/skel.min.js"></script>
+	            <script src="assets/js/util.js"></script>
+	            <script src="assets/js/main.js"></script>
+
+
+
+		<section id="main" >
+			<header>
+						<h2><center>List</center></h2>
 					</header>
-					<p>Create an account and get in on the action today!</p>
-					<ul class="actions">
-						<li><a href="login.html" class="button alt">Learn More</a></li>
-					</ul>
-				</div>
-			</section>
 
-		<!-- Two -->
-			<section id="two">
-				<div class="inner">
-					<article>
-						<div class="content">
-							<header>
-								<h3>No money, No hassle</h3>
-							</header>
-							<div class="image fit">
-								<img src="images/pic01.jpg" alt="" />
-							</div>
-							<p>As the process of Bartering elimates money from the equation completely, there is no stress about money. Instead you can focus on acquiring what you want while getting rid of your junk. </p>
-						</div>
-					</article>
-					<article class="alt">
-						<div class="content">
-							<header>
-								<h3>Variety Abroad</h3>
-							</header>
-							<div class="image fit">
-								<img src="images/pic02.jpg" alt="" />
-							</div>
-							<p>Quite possible anything that one might dream off is being listed by someone who wants to get rid of their's.</p>
-						</div>
-					</article>
-				</div>
-			</section>
-
-		<!-- Three -->
+		<form action="/action_page.php">
+		  
+		  <div class="container">
+		  
+		   <label><b>Name of Product</b></label>
+		    <input type="text" placeholder="Enter Name of Product" name="name" required>
 			
-		<!-- Footer -->
-			<section id="footer">
-				<div class="inner">
-					<header>
-						<h2>Get in Touch</h2>
-					</header>
-					<form method="post" action="#">
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="alt" /></li>
-						</ul>
-					</form>
-					<div class="copyright">
-						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
-					</div>
-				</div>
-			</section>
+			<label><b>Description of Product</b></label>
+		    <input type="text" placeholder="Please include a brief description of the product" name="name" required>
+			
+			<label><b>Condition</b></label>
+				
+			<div class="dropdown">
+	 			<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+	 			<div id="myDropdown" class="dropdown-content">
+	    			<a href="#">Link 1</a>
+	   				<a href="#">Link 2</a>
+	    			<a href="#">Link 3</a>
+	  			</div>
+			</div>
+			
+			<style >
+				/* Dropdown Button */
+			.dropbtn {
+			    background-color: #090404;
+			    color: white;
+			    padding: 10px;
+			    padding-bottom: 10px;
+			    font-size: 16px;
+			    border: none;
+			    cursor: pointer;
+			}
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			/* Dropdown button on hover & focus */
+			.dropbtn:hover, .dropbtn:focus {
+			    background-color: 110808;
+			}
 
-	</body>
+			/* The container <div> - needed to position the dropdown content */
+			.dropdown {
+			    position: relative;
+			    display: inline-block;
+			}
+
+			/* Dropdown Content (Hidden by Default) */
+			.dropdown-content {
+			    display: none;
+			    position: absolute;
+			    background-color: #f9f9f9;
+			    min-width: 160px;
+			    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			    z-index: 1;
+			}
+
+			/* Links inside the dropdown */
+			.dropdown-content a {
+			    color: black;
+			    padding: 12px 16px;
+			    text-decoration: none;
+			    display: block;
+			}
+
+			/* Change color of dropdown links on hover */
+			.dropdown-content a:hover {background-color: #f1f1f1}
+
+			/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+			.show {display:block;}
+
+
+			</style>
+			
+			<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    var i;
+			    for (i = 0; i < dropdowns.length; i++) {
+			      var openDropdown = dropdowns[i];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}	
+
+			</script>
+
+
+		    <label><b>Value</b></label>
+		    <input type="password" placeholder="Enter Price When New" name="psw">
+			
+
+			 <label><b>Attach Images</b></label>
+		    <input type= "file" id = "global-files-button" class = "nodisplay" name = "files[]" multiple accept = .jpg, .jpeg, .png, .gif>
+		    <label class = "browse-btn" for "global-files-button" >Browse</label>
+
+		        
+		    <button type="submit">Signup</button>
+		  </div>
+		</form>
+
+
+	<br>
+
+<body>
+
+</body>
 </html>
