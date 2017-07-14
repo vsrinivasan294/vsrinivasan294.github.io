@@ -1,157 +1,134 @@
-        <!-- PAGE THE USER USES WHEN THEY ARE GOING THROUGHT THE PROCESS OF PUTTING AN ITEM UP FOR BARTERING -->
 
 
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
-
 	<head>
-	        <title>List</title>
-	        <meta charset="utf-8" />
-	        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	        <link rel="stylesheet" href="assets/css/main.css" />
-	    </head>
-	    <body>
+		<title>Login</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
 
-	        <!-- Header -->
-	            <header id="header">
-	                <div class="inner">
-	                    <a href="index.html" class="logo">BarterBounty</a>
-	                    <nav id="nav">
-	                        <a href="index.html">Home</a>
-	                        <a href="homepage.html">Shop</a>
-	                        <a href="login.html">Login</a>
-	                    </nav>
-	                </div>
-	            </header>
-	            <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">BarterBounty</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="homepage.html">Shop</a>
+						<a href="login.html">Login</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
-
-	        <!-- Scripts -->
-	            <script src="assets/js/jquery.min.js"></script>
-	            <script src="assets/js/skel.min.js"></script>
-	            <script src="assets/js/util.js"></script>
-	            <script src="assets/js/main.js"></script>
-
-
-
-		<section id="main" >
+		<!-- Main -->
+			<section id="main" >
 			<header>
-						<h2><center>List</center></h2>
+						<h2><center>Add a Product</center></h2>
 					</header>
+<form action="/action_page.php">
+  
+  <div class="container">
+ 
+	 <label><b>Product</b></label>
+    <input type="text" placeholder="Enter The Product Name" name="name" required>
 
-		<form action="/action_page.php">
-		  
-		  <div class="container">
-		  
-		   <label><b>Name of Product</b></label>
-		    <input type="text" placeholder="Enter Name of Product" name="name" required>
-			
-			<label><b>Description of Product</b></label>
-		    <input type="text" placeholder="Please include a brief description of the product" name="name" required>
-			
-			<label><b>Condition</b></label>
-				
-			<div class="dropdown">
-	 			<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-	 			<div id="myDropdown" class="dropdown-content">
-	    			<a href="#">Link 1</a>
-	   				<a href="#">Link 2</a>
-	    			<a href="#">Link 3</a>
-	  			</div>
-			</div>
-			
-			<style >
-				/* Dropdown Button */
-			.dropbtn {
-			    background-color: #090404;
-			    color: white;
-			    padding: 10px;
-			    padding-bottom: 10px;
-			    font-size: 16px;
-			    border: none;
-			    cursor: pointer;
-			}
-
-			/* Dropdown button on hover & focus */
-			.dropbtn:hover, .dropbtn:focus {
-			    background-color: 110808;
-			}
-
-			/* The container <div> - needed to position the dropdown content */
-			.dropdown {
-			    position: relative;
-			    display: inline-block;
-			}
-
-			/* Dropdown Content (Hidden by Default) */
-			.dropdown-content {
-			    display: none;
-			    position: absolute;
-			    background-color: #f9f9f9;
-			    min-width: 160px;
-			    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			    z-index: 1;
-			}
-
-			/* Links inside the dropdown */
-			.dropdown-content a {
-			    color: black;
-			    padding: 12px 16px;
-			    text-decoration: none;
-			    display: block;
-			}
-
-			/* Change color of dropdown links on hover */
-			.dropdown-content a:hover {background-color: #f1f1f1}
-
-			/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-			.show {display:block;}
-
-
-			</style>
-			
-			<script>
-			/* When the user clicks on the button, 
-			toggle between hiding and showing the dropdown content */
-			function myFunction() {
-			    document.getElementById("myDropdown").classList.toggle("show");
-			}
-
-			// Close the dropdown menu if the user clicks outside of it
-			window.onclick = function(event) {
-			  if (!event.target.matches('.dropbtn')) {
-
-			    var dropdowns = document.getElementsByClassName("dropdown-content");
-			    var i;
-			    for (i = 0; i < dropdowns.length; i++) {
-			      var openDropdown = dropdowns[i];
-			      if (openDropdown.classList.contains('show')) {
-			        openDropdown.classList.remove('show');
-			      }
-			    }
-			  }
-			}	
-
-			</script>
-
-
-		    <label><b>Value</b></label>
-		    <input type="password" placeholder="Enter Price When New" name="psw">
-			
-
-			 <label><b>Attach Images</b></label>
+    <label><b>Enter Product Description</b></label>
+    <input type="text" placeholder="Enter Product Description" name="pdtds" required>
+	
+	<label><b>Attach Images</b></label>
 		    <input type= "file" id = "global-files-button" class = "nodisplay" name = "files[]" multiple accept = .jpg, .jpeg, .png, .gif>
 		    <label class = "browse-btn" for "global-files-button" >Browse</label>
 
-		        
-		    <button type="submit">Signup</button>
-		  </div>
-		</form>
+		    <label>Choose a category for the product:
+<input list="category" name="myCategory" /></label>
+<datalist id="category">
+  <option value="Art">
+  <option value="Automotive">
+  <option value="Books">
+  <option value="Clothing">
+  <option value="Education">
+  <option value="Footwear">
+  <option value="Homegoods">
+  <option value="Music">
+  <option value="Other">
+  <option value="Personal Care">
+  <option value="Technology">
+  <option value="Toys and Games">
+  <option value="Travel">
+</datalist>
+
+	<label><b>Condition</b></label>
+			 <input type="text" placeholder="Enter Product Condition" name="pdtcnd" required>
+				
+<br>
+<br>
+<button type="submit">Login</button>
+</div>
+</form>
+
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<div class="copyright">
+						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
+					</div>
+				</div>
+			</section>
 
 
-	<br>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		
 
-<body>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
 
-</body>
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 160px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+   
+}
+	
+</style>
+	</body>
 </html>
