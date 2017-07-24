@@ -1,0 +1,336 @@
+
+        <!-- PAGE THAT LISTS ALL OF THE ITEMS UP FOR SALE, PG 1 -->
+
+<html>
+    <head>
+        <title>Listing</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
+
+        <!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <a href="index.html" class="logo">BarterBounty</a>
+                    <nav id="nav">
+                        <a href="index.html">Home</a>
+                        <a href="homepage.html">Shop</a>
+                        <a href="login.html">Login</a>
+                    </nav>
+                </div>
+            </header>
+            <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+<br>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+</style>
+</head>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shop Homepage - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+           
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="homepage.html">Listings</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+
+
+        <div class="row">
+
+            <div class="col-md-3">
+   <div class="list-group">
+ <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:100%;">Category</th>
+  </tr>
+   <tr>
+    <td><a href="homepage.html" target="_blank">All</a></td>
+  </tr>
+  <tr>
+    <td><a href="Art.html" target="_blank">Art</a></td>
+  </tr>
+   <tr>
+    <td><a href="Automotive.html" target="_blank">Automotive</a></td>
+  </tr>
+  <tr>
+    <td><a href="Books.html" target="_blank">Books</a></td>
+  </tr>
+  <tr>
+    <td><a href="Clothing.html" target="_blank">Clothing</a></td>
+  </tr>
+  <tr>
+    <td><a href="Education.html" target="_blank">Education</a></td>
+  </tr>
+  <tr>
+    <td><a href="Homegoods.html" target="_blank">Homegoods</a></td>
+  </tr>
+  <tr>
+    <td><a href="Music.html" target="_blank">Music</a></td>
+  </tr>
+  <tr>
+    <td><a href="PersonalCare.html" target="_blank">Personal Care</a></td>
+  </tr>
+  <tr>
+    <td><a href="Footwear.html" target="_blank">Footwear</a></td>
+  </tr>
+  <tr>
+    <td><a href="Technology.html" target="_blank">Technology</a></td>
+  </tr>
+  <tr>
+    <td><a href="ToysAndGames.html" target="_blank">Toys and Games</a></td>
+  </tr>
+  <tr>
+    <td><a href="Travel.html" target="_blank">Travel</a></td>
+  </tr>
+  <tr>
+    <td><a href="Other.html" target="_blank">Other</a></td>
+  </tr>
+</table>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4><a href="clickedpages/item1.html">Kaplan 8 ACT Tests</a>
+                                </h4>
+                                <p>Book to help you study for the act test. U buy this u get into IIT Madras</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$64.99</h4>
+                                <h4><a href="clickedpages/item2.html">Second Product</a>
+                                </h4>
+                                <p>This is a short description.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$74.99</h4>
+                                <h4><a href="clickedpages/item3.html">Third Product</a>
+                                </h4>
+                                <p>This is a short description.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$84.99</h4>
+                                <h4><a href="clickedpages/item4.html">Fourth Product</a>
+                                </h4>
+                                <p>This is a short description.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$94.99</h4>
+                                <h4><a href="clickedpages/item5.html">Fifth Product</a>
+                                </h4>
+                                <p>This is a short description.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/320x150" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$84.99</h4>
+                                <h4><a href="clickedpages/item6.html">Sixth Product</a>
+                                </h4>
+                                <p>This is a short description.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+
+</html>
+
+    </body>
+</html>
